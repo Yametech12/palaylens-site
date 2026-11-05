@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" role="img" aria-label="PalayLens AI icon: a golden rice panicle on deep green">
+  <rect width="108" height="108" fill="#173F2C"/>
+  <path fill="#1E5638" d="M38,101 C26,92 18,80 16,64 C31,71 37,86 38,101 Z"/>
+  <path fill="none" stroke="#DFA32B" stroke-width="6" stroke-linecap="round" d="M38,100 C40,70 52,40 82,24"/>
+  <ellipse cx="48.6" cy="75.6" rx="7" ry="13" fill="#F2C14E" transform="rotate(-38 48.6 75.6)"/>
+  <ellipse cx="59.4" cy="58.3" rx="7" ry="13" fill="#F2C14E" transform="rotate(-30 59.4 58.3)"/>
+  <ellipse cx="71.3" cy="43.2" rx="7" ry="12.4" fill="#F2C14E" transform="rotate(-22 71.3 43.2)"/>
+  <ellipse cx="84.2" cy="31.3" rx="6.5" ry="11.9" fill="#F2C14E" transform="rotate(-12 84.2 31.3)"/>
+  <ellipse cx="41" cy="60.5" rx="6" ry="11.3" fill="#DFA32B" transform="rotate(-44 41 60.5)"/>
+  <ellipse cx="51.8" cy="44.3" rx="6" ry="11.3" fill="#DFA32B" transform="rotate(-34 51.8 44.3)"/>
+  <ellipse cx="64.8" cy="30.2" rx="6" ry="10.8" fill="#DFA32B" transform="rotate(-24 64.8 30.2)"/>
+</svg>

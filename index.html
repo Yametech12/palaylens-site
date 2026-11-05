@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PalayLens AI — Rice Leaf Disease Classifier for Android</title>
+<meta name="description" content="PalayLens AI identifies rice leaf diseases on your Android phone, on-device and offline. Download the free research APK.">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;0,900;1,600&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <img class="hero-icon" src="icon.svg" alt="PalayLens AI icon: a golden rice panicle on deep green" width="168" height="168">
+    <div class="hero-text">
+      <p class="eyebrow">Rice Leaf Disease Classifier · Android</p>
+      <h1>PalayLens AI</h1>
+      <p class="tagline">A field lens for the rice crop.</p>
+      <p class="lede">Point your phone at a rice leaf and find out what is wrong with it. PalayLens AI classifies six rice leaf conditions right on the device, so it works in the middle of the field with no signal at all.</p>
+      <a class="btn-download" href="apk/PalayLens_AI_v0.5.3.apk" download>Download PalayLens AI v0.5.3</a>
+      <p class="btn-meta"><strong>APK · 24.9 MB · Android 8.0 and up</strong> · Free for research and field evaluation · <a href="apk/latest.apk" download>Always-latest link</a></p>
+      <p class="install-note">First install: Android may ask you to allow installs from your browser. That is normal for apps installed outside the Play Store.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="how">
+    <div class="sec-head"><span class="sec-no">01</span><h2>How it works</h2></div>
+    <div class="steps">
+      <div class="step">
+        <span class="n">1</span>
+        <h3>Photograph a leaf</h3>
+        <p>Take a photo of a rice leaf, or pick one from your gallery. A clear shot of the affected part of the leaf works best.</p>
+      </div>
+      <div class="step">
+        <span class="n">2</span>
+        <h3>The phone does the thinking</h3>
+        <p>A MobileNetV2 deep-learning model built into the app checks the photo on the spot. No upload, no waiting, no mobile data needed.</p>
+      </div>
+      <div class="step">
+        <span class="n">3</span>
+        <h3>Read the result</h3>
+        <p>You get the condition name, how confident the app is, and plain guidance on what to do next. Every scan is saved in the app&rsquo;s history.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="detects">
+    <div class="sec-head"><span class="sec-no">02</span><h2>What it detects</h2></div>
+    <div class="classes">
+      <div class="class-cell warn">
+        <h3>Bacterial Blight</h3>
+        <p>Water-soaked streaks along the leaf edges that turn yellow, then white, as the leaf dries out.</p>
+        <p class="latin">Xanthomonas oryzae pv. oryzae</p>
+      </div>
+      <div class="class-cell warn">
+        <h3>Blast</h3>
+        <p>Spindle-shaped spots with gray centers and brown borders. One of the most destructive rice diseases worldwide.</p>
+        <p class="latin">Magnaporthe oryzae</p>
+      </div>
+      <div class="class-cell warn">
+        <h3>Brown Spot</h3>
+        <p>Round, dark brown spots scattered on leaves and grains, common in nutrient-poor or stressed fields.</p>
+        <p class="latin">Bipolaris oryzae</p>
+      </div>
+      <div class="class-cell">
+        <h3>Healthy</h3>
+        <p>The leaf shows no visible signs of the diseases above. Keep monitoring, especially after wet weather.</p>
+      </div>
+      <div class="class-cell warn">
+        <h3>Tungro</h3>
+        <p>Yellow-orange discoloration and stunted growth, caused by viruses carried between plants by green leafhoppers.</p>
+        <p class="latin">Rice tungro bacilliform and spherical viruses</p>
+      </div>
+      <div class="class-cell">
+        <h3>Not a Rice Leaf</h3>
+        <p>If the photo is not a rice leaf at all, the app says so and asks for a new photo instead of guessing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="performance">
+    <div class="sec-head"><span class="sec-no">03</span><h2>Measured performance</h2></div>
+    <div class="stats">
+      <div class="stat"><span class="num">94.78%</span><span class="lbl">Test accuracy</span></div>
+      <div class="stat"><span class="num">0.9513</span><span class="lbl">Macro F1-score</span></div>
+      <div class="stat"><span class="num">10,597</span><span class="lbl">Training images</span></div>
+      <div class="stat"><span class="num">6</span><span class="lbl">Classes</span></div>
+      <div class="stat"><span class="num">100%</span><span class="lbl">Offline scanning</span></div>
+    </div>
+    <p class="perf-note">The model was trained on publicly available rice leaf image datasets and fine-tuned with a documented two-stage protocol, then tested on a held-out test set it had never seen. Classification runs entirely on the phone; scanning never needs an internet connection.</p>
+  </section>
+
+  <section id="privacy">
+    <div class="sec-head"><span class="sec-no">04</span><h2>Privacy, plainly</h2></div>
+    <ul class="privacy-list">
+      <li><strong>Photos stay on your phone.</strong> Scans are classified on the device and kept in the app&rsquo;s history on the device only.</li>
+      <li><strong>Sharing is your choice.</strong> With your permission, scans may be shared for this research. Turn sharing off in Settings at any time and nothing leaves the phone.</li>
+      <li><strong>WiFi only, and private.</strong> Shared scans upload only over WiFi to a private research storage bucket, never over mobile data.</li>
+      <li><strong>No accounts, no names, no ads.</strong> The app never asks who you are. Each phone is known only by an anonymous code.</li>
+      <li><strong>Limited access.</strong> Shared scans are seen only by the research team and the study&rsquo;s expert validator. Data is never sold and never used for advertising.</li>
+      <li><strong>Protected by law.</strong> Data handling follows the Data Privacy Act of 2012 (RA 10173). The full policy is inside the app under Settings, Privacy Policy.</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <div class="sec-head"><span class="sec-no">05</span><h2>About the research</h2></div>
+    <div class="about-grid">
+      <p>PalayLens AI is an undergraduate thesis project that develops and evaluates a deep learning-based mobile application for rice leaf disease classification using publicly available and locally acquired images. The system is being field-validated with rice farmers at the study site, alongside a farmer needs assessment and a usability evaluation. Local field photographs are used for evaluation only, never for training.</p>
+      <dl class="facts">
+        <div><dt>Authors</dt><dd>Mohammad Sidique Ibrahim, Rjed Carballo, Kristine Kane O. Abiol</dd></div>
+        <div><dt>Adviser</dt><dd>Janette Tibudan</dd></div>
+        <div><dt>Institution</dt><dd>Computer Engineering, St. Peter&rsquo;s College, Iligan City</dd></div>
+        <div><dt>Study site</dt><dd>Purok 2, Barangay Digkilaan, Iligan City</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="versions">
+    <div class="sec-head"><span class="sec-no">06</span><h2>Version history</h2></div>
+    <ul class="versions">
+      <li>
+        <span class="v">0.5.3</span><span class="tag">Current</span>
+        <p><strong>November 5, 2026.</strong> First public release. Signed release build, six-class on-device classification, privacy policy in the app, and research uploads organized by class.</p>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <img src="icon.svg" alt="" width="54" height="54">
+    <div>
+      <p>PalayLens AI · A research prototype from St. Peter&rsquo;s College, Iligan City.</p>
+      <p class="credit">Made by Mohammad Sidique Ibrahim</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
