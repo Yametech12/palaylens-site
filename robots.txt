@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://palaylens.vercel.app/sitemap.xml

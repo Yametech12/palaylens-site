@@ -3,9 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PalayLens AI — Rice Leaf Disease Classifier for Android</title>
+<title>PalayLens AI: Rice Leaf Disease Classifier for Android</title>
 <meta name="description" content="PalayLens AI identifies rice leaf diseases on your Android phone, on-device and offline. Download the free research APK.">
+<link rel="canonical" href="https://palaylens.vercel.app/">
+<meta name="theme-color" content="#173F2C">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PalayLens AI">
+<meta property="og:title" content="PalayLens AI: Rice Leaf Disease Classifier for Android">
+<meta property="og:description" content="PalayLens AI identifies rice leaf diseases on your Android phone, on-device and offline. Download the free research APK.">
+<meta property="og:url" content="https://palaylens.vercel.app/">
+<meta property="og:image" content="https://palaylens.vercel.app/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PalayLens AI, a rice leaf disease classifier for Android, 94.78% test accuracy">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PalayLens AI: Rice Leaf Disease Classifier for Android">
+<meta name="twitter:description" content="PalayLens AI identifies rice leaf diseases on your Android phone, on-device and offline. Download the free research APK.">
+<meta name="twitter:image" content="https://palaylens.vercel.app/og.png">
+<meta name="twitter:image:alt" content="PalayLens AI, a rice leaf disease classifier for Android, 94.78% test accuracy">
+<link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;0,900;1,600&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -13,138 +33,304 @@
 </head>
 <body>
 
-<header class="hero">
-  <div class="hero-inner">
-    <img class="hero-icon" src="icon.svg" alt="PalayLens AI icon: a golden rice panicle on deep green" width="168" height="168">
-    <div class="hero-text">
-      <p class="eyebrow">Rice Leaf Disease Classifier · Android</p>
-      <h1>PalayLens AI</h1>
-      <p class="tagline">A field lens for the rice crop.</p>
-      <p class="lede">Point your phone at a rice leaf and find out what is wrong with it. PalayLens AI classifies six rice leaf conditions right on the device, so it works in the middle of the field with no signal at all.</p>
-      <a class="btn-download" href="apk/PalayLens_AI_v0.5.4.apk" download>Download PalayLens AI v0.5.4</a>
-      <p class="btn-meta"><strong>APK · 24.9 MB · Android 8.0 and up</strong> · Free for research and field evaluation · <a href="apk/latest.apk" download>Always-latest link</a></p>
-      <p class="install-note">First install: Android may ask you to allow installs from your browser. That is normal for apps installed outside the Play Store.</p>
-    </div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="wrap mast-in">
+    <a class="brand" href="#top" aria-label="PalayLens AI, back to top">
+      <img src="icon.svg" alt="" width="32" height="32">
+      <span>PalayLens&nbsp;<b>AI</b></span>
+    </a>
+    <nav class="dnav" aria-label="Sections">
+      <a href="#how">How it works</a>
+      <a href="#detects">Detects</a>
+      <a href="#performance">Performance</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#about">About</a>
+      <a href="#versions">Versions</a>
+    </nav>
+    <a class="btn btn-small" href="apk/PalayLens_AI_v0.5.5.apk" download>Download</a>
+    <details class="mnav">
+      <summary>Menu</summary>
+      <nav aria-label="Sections">
+        <a href="apk/PalayLens_AI_v0.5.5.apk" download>Download the app</a>
+        <a href="#how">How it works</a>
+        <a href="#detects">Detects</a>
+        <a href="#performance">Performance</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#about">About</a>
+        <a href="#versions">Versions</a>
+      </nav>
+    </details>
   </div>
 </header>
 
-<main>
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Rice Leaf Disease Classifier · Android</p>
+        <h1>Know what is wrong with your rice leaf, in the field, offline.</h1>
+        <p class="lede">Point your phone at a rice leaf and get an answer on the spot. PalayLens AI runs a MobileNetV2 model on the device itself, classifying six rice leaf conditions with no signal, no upload, and no waiting.</p>
+        <div class="dl">
+          <a class="btn btn-big" href="apk/PalayLens_AI_v0.5.5.apk" download>Download PalayLens AI v0.5.5</a>
+          <p class="spec"><strong>APK · 26.2 MB · Android 8.0 and up</strong> · Free for research and field evaluation</p>
+          <p class="sha">PalayLens_AI_v0.5.5.apk<br>SHA-256 df3ee5fa906cc53248b7324ae9ca2c6b7dbc6d99ccf09cacd7efe794cce66d1f</p>
+          <p class="latest"><a href="apk/latest.apk" download>Always-latest link</a> · the same build, at a permanent address for sharing</p>
+        </div>
+      </div>
+      <figure class="plate">
+        <div class="plate-panel">
+          <img class="shot back" src="shot-home.webp" alt="PalayLens AI home screen: a large gold button for taking a leaf photo, with recent scans listed below" width="780" height="1621">
+          <img class="shot front" src="shot-result.webp" alt="PalayLens AI result screen: a tungro diagnosis at 98 percent confidence, with the next steps spelled out" width="780" height="1621">
+        </div>
+        <figcaption>The app as the farmer sees it: a tungro result, a confidence reading, and the next steps.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div class="wrap trust-in">
+      <p><b>94.78%</b><span>measured test accuracy</span></p>
+      <p><b>100%</b><span>offline scanning</span></p>
+      <p><b>6</b><span>leaf classes from one photo</span></p>
+      <p><b>Free</b><span>for research and field evaluation</span></p>
+    </div>
+  </div>
 
   <section id="how">
-    <div class="sec-head"><span class="sec-no">01</span><h2>How it works</h2></div>
-    <div class="steps">
-      <div class="step">
-        <span class="n">1</span>
-        <h3>Photograph a leaf</h3>
-        <p>Take a photo of a rice leaf, or pick one from your gallery. A clear shot of the affected part of the leaf works best.</p>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">How it works</p>
+        <h2>Three steps, right in the field</h2>
       </div>
-      <div class="step">
-        <span class="n">2</span>
-        <h3>The phone does the thinking</h3>
-        <p>A MobileNetV2 deep-learning model built into the app checks the photo on the spot. No upload, no waiting, no mobile data needed.</p>
+      <div class="steps">
+        <div class="step">
+          <span class="n">1</span>
+          <h3>Photograph a leaf</h3>
+          <p>Take a photo of a rice leaf, or pick one from your gallery. A clear shot of the affected part of the leaf works best.</p>
+        </div>
+        <div class="step">
+          <span class="n">2</span>
+          <h3>The phone does the thinking</h3>
+          <p>A MobileNetV2 deep-learning model built into the app checks the photo on the spot. No upload, no waiting, no mobile data needed.</p>
+        </div>
+        <div class="step">
+          <span class="n">3</span>
+          <h3>Read the result</h3>
+          <p>You get the condition name, how confident the app is, and plain guidance on what to do next. Every scan is saved in the app&rsquo;s history.</p>
+        </div>
       </div>
-      <div class="step">
-        <span class="n">3</span>
-        <h3>Read the result</h3>
-        <p>You get the condition name, how confident the app is, and plain guidance on what to do next. Every scan is saved in the app&rsquo;s history.</p>
-      </div>
+
+      <h3 class="sub-h">Installing the app</h3>
+      <ol class="install">
+        <li><b>Download the APK</b> using the button at the top of this page.</li>
+        <li><b>Open the downloaded file</b> from your notifications or your Downloads folder.</li>
+        <li><b>Allow installs from your browser</b> when Android asks. That is normal for apps installed outside the Play Store.</li>
+        <li><b>Tap Install</b>Then open PalayLens AI from your home screen.</li>
+      </ol>
     </div>
   </section>
 
   <section id="detects">
-    <div class="sec-head"><span class="sec-no">02</span><h2>What it detects</h2></div>
-    <div class="classes">
-      <div class="class-cell warn">
-        <h3>Bacterial Blight</h3>
-        <p>Water-soaked streaks along the leaf edges that turn yellow, then white, as the leaf dries out.</p>
-        <p class="latin">Xanthomonas oryzae pv. oryzae</p>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">What it detects</p>
+        <h2>Six conditions, told apart</h2>
       </div>
-      <div class="class-cell warn">
-        <h3>Blast</h3>
-        <p>Spindle-shaped spots with gray centers and brown borders. One of the most destructive rice diseases worldwide.</p>
-        <p class="latin">Magnaporthe oryzae</p>
-      </div>
-      <div class="class-cell warn">
-        <h3>Brown Spot</h3>
-        <p>Round, dark brown spots scattered on leaves and grains, common in nutrient-poor or stressed fields.</p>
-        <p class="latin">Bipolaris oryzae</p>
-      </div>
-      <div class="class-cell">
-        <h3>Healthy</h3>
-        <p>The leaf shows no visible signs of the diseases above. Keep monitoring, especially after wet weather.</p>
-      </div>
-      <div class="class-cell warn">
-        <h3>Tungro</h3>
-        <p>Yellow-orange discoloration and stunted growth, caused by viruses carried between plants by green leafhoppers.</p>
-        <p class="latin">Rice tungro bacilliform and spherical viruses</p>
-      </div>
-      <div class="class-cell">
-        <h3>Not a Rice Leaf</h3>
-        <p>If the photo is not a rice leaf at all, the app says so and asks for a new photo instead of guessing.</p>
+      <div class="spec-table">
+        <div class="spec-row">
+          <span class="tag disease">Disease</span>
+          <div class="spec-name"><h3>Bacterial Blight</h3><p class="latin">Xanthomonas oryzae pv. oryzae</p></div>
+          <p class="spec-desc">Water-soaked streaks along the leaf edges that turn yellow, then white, as the leaf dries out.</p>
+        </div>
+        <div class="spec-row">
+          <span class="tag disease">Disease</span>
+          <div class="spec-name"><h3>Blast</h3><p class="latin">Magnaporthe oryzae</p></div>
+          <p class="spec-desc">Spindle-shaped spots with gray centers and brown borders. One of the most destructive rice diseases worldwide.</p>
+        </div>
+        <div class="spec-row">
+          <span class="tag disease">Disease</span>
+          <div class="spec-name"><h3>Brown Spot</h3><p class="latin">Bipolaris oryzae</p></div>
+          <p class="spec-desc">Round, dark brown spots scattered on leaves and grains, common in nutrient-poor or stressed fields.</p>
+        </div>
+        <div class="spec-row">
+          <span class="tag healthy">Healthy</span>
+          <div class="spec-name"><h3>Healthy</h3></div>
+          <p class="spec-desc">The leaf shows no visible signs of the diseases above. Keep monitoring, especially after wet weather.</p>
+        </div>
+        <div class="spec-row">
+          <span class="tag disease">Disease</span>
+          <div class="spec-name"><h3>Tungro</h3><p class="latin">Rice tungro bacilliform and spherical viruses</p></div>
+          <p class="spec-desc">Yellow-orange discoloration and stunted growth, caused by viruses carried between plants by green leafhoppers.</p>
+        </div>
+        <div class="spec-row">
+          <span class="tag none">Not a leaf</span>
+          <div class="spec-name"><h3>Not a Rice Leaf</h3></div>
+          <p class="spec-desc">If the photo is not a rice leaf at all, the app says so and asks for a new photo instead of guessing.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="performance">
-    <div class="sec-head"><span class="sec-no">03</span><h2>Measured performance</h2></div>
-    <div class="stats">
-      <div class="stat"><span class="num">94.78%</span><span class="lbl">Test accuracy</span></div>
-      <div class="stat"><span class="num">0.9513</span><span class="lbl">Macro F1-score</span></div>
-      <div class="stat"><span class="num">10,597</span><span class="lbl">Training images</span></div>
-      <div class="stat"><span class="num">6</span><span class="lbl">Classes</span></div>
-      <div class="stat"><span class="num">100%</span><span class="lbl">Offline scanning</span></div>
+  <section id="performance" class="band">
+    <div class="wrap">
+      <div class="sec-head on-dark">
+        <p class="eyebrow">Measured performance</p>
+        <h2>Measured, not promised</h2>
+      </div>
+      <div class="stats">
+        <div class="stat"><span class="num">94.78%</span><span class="lbl">Test accuracy</span></div>
+        <div class="stat"><span class="num">0.9513</span><span class="lbl">Macro F1-score</span></div>
+        <div class="stat"><span class="num">10,597</span><span class="lbl">Training images</span></div>
+        <div class="stat"><span class="num">6</span><span class="lbl">Classes</span></div>
+      </div>
+      <p class="f1-cap">F1-score by class, on the held-out test set</p>
+      <div class="f1">
+        <div class="f1-row"><span>Bacterial Blight</span><b>0.9259</b></div>
+        <div class="f1-row"><span>Blast</span><b>0.9014</b></div>
+        <div class="f1-row"><span>Brown Spot</span><b>0.9164</b></div>
+        <div class="f1-row"><span>Healthy</span><b>0.9655</b></div>
+        <div class="f1-row"><span>Tungro</span><b>1.0000</b></div>
+        <div class="f1-row"><span>Not a Rice Leaf</span><b>0.9985</b></div>
+      </div>
+      <p class="perf-note">The model was trained on publicly available rice leaf image datasets and fine-tuned with a documented two-stage protocol, then tested on a held-out test set it had never seen. Classification runs entirely on the phone; scanning never needs an internet connection. PalayLens AI is a field aid, not a substitute for expert diagnosis: for severe or unfamiliar cases, consult your local agriculture office.</p>
     </div>
-    <p class="perf-note">The model was trained on publicly available rice leaf image datasets and fine-tuned with a documented two-stage protocol, then tested on a held-out test set it had never seen. Classification runs entirely on the phone; scanning never needs an internet connection.</p>
   </section>
 
   <section id="privacy">
-    <div class="sec-head"><span class="sec-no">04</span><h2>Privacy, plainly</h2></div>
-    <ul class="privacy-list">
-      <li><strong>Photos stay on your phone.</strong> Scans are classified on the device and kept in the app&rsquo;s history on the device only.</li>
-      <li><strong>Sharing is your choice.</strong> With your permission, scans may be shared for this research. Turn sharing off in Settings at any time and nothing leaves the phone.</li>
-      <li><strong>WiFi only, and private.</strong> Shared scans upload only over WiFi to a private research storage bucket, never over mobile data.</li>
-      <li><strong>No accounts, no names, no ads.</strong> The app never asks who you are. Each phone is known only by an anonymous code.</li>
-      <li><strong>Limited access.</strong> Shared scans are seen only by the research team and the study&rsquo;s expert validator. Data is never sold and never used for advertising.</li>
-      <li><strong>Protected by law.</strong> Data handling follows the Data Privacy Act of 2012 (RA 10173). The full policy is inside the app under Settings, Privacy Policy.</li>
-    </ul>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Privacy</p>
+        <h2>Privacy, plainly</h2>
+      </div>
+      <ul class="privacy-list">
+        <li><p><strong>Photos stay on your phone.</strong> Scans are classified on the device and kept in the app&rsquo;s history on the device only.</p></li>
+        <li><p><strong>Sharing is your choice.</strong> With your permission, scans may be shared for this research. Turn sharing off in Settings at any time and nothing leaves the phone.</p></li>
+        <li><p><strong>WiFi only, and private.</strong> Shared scans upload only over WiFi to a private research storage bucket, never over mobile data.</p></li>
+        <li><p><strong>No accounts, no names, no ads.</strong> The app never asks who you are. Each phone is known only by an anonymous code.</p></li>
+        <li><p><strong>Limited access.</strong> Shared scans are seen only by the research team and the study&rsquo;s expert validator. Data is never sold and never used for advertising.</p></li>
+        <li><p><strong>Protected by law.</strong> Data handling follows the Data Privacy Act of 2012 (RA 10173). The full policy is inside the app under Settings, Privacy Policy.</p></li>
+      </ul>
+    </div>
   </section>
 
   <section id="about">
-    <div class="sec-head"><span class="sec-no">05</span><h2>About the research</h2></div>
-    <div class="about-grid">
-      <p>PalayLens AI is an undergraduate thesis project that develops and evaluates a deep learning-based mobile application for rice leaf disease classification using publicly available and locally acquired images. The system is being field-validated with rice farmers at the study site, alongside a farmer needs assessment and a usability evaluation. Local field photographs are used for evaluation only, never for training.</p>
-      <dl class="facts">
-        <div><dt>Authors</dt><dd>Mohammad Sidique Ibrahim, Rjed Carballo, Kristine Kane O. Abiol</dd></div>
-        <div><dt>Adviser</dt><dd>Janette Tibudan</dd></div>
-        <div><dt>Institution</dt><dd>Computer Engineering, St. Peter&rsquo;s College, Iligan City</dd></div>
-        <div><dt>Study site</dt><dd>Purok 2, Barangay Digkilaan, Iligan City</dd></div>
-      </dl>
+    <div class="wrap">
+      <div class="divider" aria-hidden="true">
+        <span></span>
+        <img src="icon.svg" alt="" width="26" height="26">
+        <span></span>
+      </div>
+      <div class="sec-head">
+        <p class="eyebrow">About the research</p>
+        <h2>An undergraduate thesis, built with farmers</h2>
+      </div>
+      <div class="about-grid">
+        <p>PalayLens AI is an undergraduate thesis project that develops and evaluates a deep learning-based mobile application for rice leaf disease classification using publicly available and locally acquired images. The system is being field-validated with rice farmers at the study site, alongside a farmer needs assessment and a usability evaluation. Local field photographs are used for evaluation only, never for training.</p>
+        <dl class="facts">
+          <div><dt>Authors</dt><dd>Mohammad Sidique Ibrahim, Rjed Carballo, Kristine Kane O. Abiol</dd></div>
+          <div><dt>Adviser</dt><dd>Janette Tibudan</dd></div>
+          <div><dt>Institution</dt><dd>Computer Engineering, St. Peter&rsquo;s College, Iligan City</dd></div>
+          <div><dt>Study site</dt><dd>Purok 2, Barangay Digkilaan, Iligan City</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Questions</p>
+        <h2>Fair questions</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>Is the app free?</summary>
+          <p>Yes. PalayLens AI is free for research and field evaluation. There are no ads, no accounts, and no in-app purchases.</p>
+        </details>
+        <details>
+          <summary>Does it work without internet?</summary>
+          <p>Yes. Classification happens on the phone, so scanning works anywhere, including fields with no signal. A connection is used only if you allow scan sharing over WiFi, or when the app checks this page for a new version.</p>
+        </details>
+        <details>
+          <summary>Which phones can run it?</summary>
+          <p>Any Android phone running Android 8.0 (Oreo) or newer. The download is 26.2 MB.</p>
+        </details>
+        <details>
+          <summary>Why is it not on the Play Store?</summary>
+          <p>It is a research prototype distributed by the study team from this page. Android may ask you to allow installs from your browser the first time; that is normal for apps installed outside the Play Store, and the install steps above walk through it.</p>
+        </details>
+        <details>
+          <summary>How do updates work?</summary>
+          <p>The app checks this page for new versions. When one is available, it offers the download and verifies the file&rsquo;s SHA-256 checksum before installing, so the update you install is exactly the update published here.</p>
+        </details>
+        <details>
+          <summary>Can it replace an expert?</summary>
+          <p>No. PalayLens AI is a screening aid for the field. For severe, spreading, or unfamiliar cases, show the result to your local agriculture office or an expert validator.</p>
+        </details>
+      </div>
     </div>
   </section>
 
   <section id="versions">
-    <div class="sec-head"><span class="sec-no">06</span><h2>Version history</h2></div>
-    <ul class="versions">
-      <li>
-        <span class="v">0.5.4</span><span class="tag">Current</span>
-        <p><strong>November 5, 2026.</strong> Adds in-app update checks and a stability fix for large camera photos. The app now notices new versions on this page and offers a verified download.</p>
-      </li>
-      <li>
-        <span class="v">0.5.3</span><span class="tag old">Previous</span>
-        <p><strong>November 5, 2026.</strong> First public release. Signed release build, six-class on-device classification, privacy policy in the app, and research uploads organized by class.</p>
-      </li>
-    </ul>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Version history</p>
+        <h2>Changelog</h2>
+      </div>
+      <ul class="versions">
+        <li>
+          <div class="v-head"><span class="v">0.5.5</span><span class="tag cur">Current</span><span class="v-date">November 5, 2026</span></div>
+          <p>Adds a Dashboard with scan statistics and upload status.</p>
+          <p class="v-meta"><a href="apk/PalayLens_AI_v0.5.5.apk" download>Download v0.5.5</a> · PalayLens_AI_v0.5.5.apk · SHA-256 df3ee5fa906cc53248b7324ae9ca2c6b7dbc6d99ccf09cacd7efe794cce66d1f</p>
+        </li>
+        <li>
+          <div class="v-head"><span class="v">0.5.4</span><span class="tag prev">Previous</span><span class="v-date">November 5, 2026</span></div>
+          <p>Adds in-app update checks and a stability fix for large camera photos. The app now notices new versions on this page and offers a verified download.</p>
+          <p class="v-meta"><a href="apk/PalayLens_AI_v0.5.4.apk" download>Download v0.5.4</a> · PalayLens_AI_v0.5.4.apk · SHA-256 dd0f14eec8cb2101fcb3f0aed2aa448de8df812e67bcb53d39f9e7b576388b10</p>
+        </li>
+        <li>
+          <div class="v-head"><span class="v">0.5.3</span><span class="tag prev">Earlier</span><span class="v-date">November 5, 2026</span></div>
+          <p>First public release. Signed release build, six-class on-device classification, privacy policy in the app, and research uploads organized by class.</p>
+          <p class="v-meta"><a href="apk/PalayLens_AI_v0.5.3.apk" download>Download v0.5.3</a></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap cta-in">
+      <div>
+        <h2>Put a field lens in your pocket.</h2>
+        <p>Free for research and field evaluation · Android 8.0 and up · Works offline</p>
+      </div>
+      <a class="btn btn-deep" href="apk/PalayLens_AI_v0.5.5.apk" download>Download PalayLens AI v0.5.5</a>
+    </div>
   </section>
 
 </main>
 
 <footer>
-  <div class="footer-inner">
-    <img src="icon.svg" alt="" width="54" height="54">
-    <div>
-      <p>PalayLens AI · A research prototype from St. Peter&rsquo;s College, Iligan City.</p>
-      <p class="credit">Made by Mohammad Sidique Ibrahim</p>
-    </div>
+  <div class="wrap foot-in">
+    <a class="brand light" href="#top" aria-label="PalayLens AI, back to top">
+      <img src="icon.svg" alt="" width="30" height="30">
+      <span>PalayLens&nbsp;<b>AI</b></span>
+    </a>
+    <nav class="fnav" aria-label="Footer">
+      <a href="#how">How it works</a>
+      <a href="#detects">Detects</a>
+      <a href="#performance">Performance</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#about">About</a>
+      <a href="#versions">Versions</a>
+      <a href="#top">Back to top</a>
+    </nav>
+  </div>
+  <div class="wrap foot-base">
+    <p>PalayLens AI · A research prototype from St. Peter&rsquo;s College, Iligan City.</p>
+    <p class="credit">Made by Mohammad Sidique Ibrahim</p>
   </div>
 </footer>
 
