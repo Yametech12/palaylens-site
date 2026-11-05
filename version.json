@@ -1,1 +1,1 @@
-{"apkUrl":"https://palaylens.vercel.app/apk/PalayLens_AI_v0.5.3.apk","notes":"First public release.","publishedAt":"2026-11-05","sha256":"b539c3a98e6d4215b7cd356026628753e6c9b30a5bdee6ac2629bb11a1ed5161","versionCode":8,"versionName":"0.5.3"}
+{"apkUrl":"https://palaylens.vercel.app/apk/PalayLens_AI_v0.5.4.apk","notes":"Adds in-app update checks and a stability fix for large camera photos.","publishedAt":"2026-11-05","sha256":"dd0f14eec8cb2101fcb3f0aed2aa448de8df812e67bcb53d39f9e7b576388b10","versionCode":9,"versionName":"0.5.4"}
